@@ -77,7 +77,7 @@ $dischi = [
   
 
 foreach($dischi as $poster){
-    echo '<img src="$poster["poster"]">';
+    echo '<img src="' . $poster["poster"] . '">';
 }
 
 
