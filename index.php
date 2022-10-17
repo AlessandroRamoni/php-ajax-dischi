@@ -8,6 +8,20 @@
 </head>
 <body>
 
+<style>
+
+    #contenitore {
+        display: flex;
+        text-align: center;
+    }
+
+    #contenitore #copertina {
+        width: calc(100% / 5);
+    }
+
+</style>
+
+
 <?php
 $dischi = [   
     [      
@@ -76,27 +90,36 @@ $dischi = [
 ];
   
 
-foreach($dischi as $poster){
-    echo '<img src="' . $poster["poster"] . '">';
+foreach($dischi as $copertina){
+    ?>
+    <div id="contenitore">
+        <div id="copertina">
+            <?= '<img src="' . $copertina["poster"] . '">'?>
+            <?= "<h1>" . $copertina["title"] . "</h1>"?>
+            <?= "<h3>" . $copertina["author"] . "</h3>"?>
+            <?= "<p>" . $copertina["genre"] . "</p>"?>
+            <?= "<p>" . $copertina["year"] . "</p>"?>
+        </div>
+    </div>
+    <?php
+    
+    // foreach($dischi as $titolo){
+    // echo "<h1>" . $titolo["title"] . "</h1>";
+    // }
+
+    // foreach($dischi as $autore){
+    //     echo "<h3>" . $autore["author"] . "</h3>";
+    // }
+
+    // foreach($dischi as $genere){
+    // echo "<p>" . $genere["genre"] . "</p>";
+    // }
+
+    // foreach($dischi as $anno){
+    // echo "<p>" . $anno["year"] . "</p>";
+    // }
 }
 
-
-
-foreach($dischi as $titolo){
-    echo "<h1>" . $titolo["title"] . "</h1>";
-}
-
-foreach($dischi as $autore){
-    echo "<h3>" . $autore["author"] . "</h3>";
-}
-
-foreach($dischi as $genere){
-    echo "<p>" . $genere["genre"] . "</p>";
-}
-
-foreach($dischi as $anno){
-    echo "<p>" . $anno["year"] . "</p>";
-}
 
 ?>
 
