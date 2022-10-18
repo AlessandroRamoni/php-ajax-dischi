@@ -10,14 +10,33 @@
 
 <style>
 
-    #contenitore {
+    body {
         display: flex;
-        text-align: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 auto;
+        max-width: 1000px;
+        background-color:  rgba(0, 92, 125, 0.5);
     }
 
-    #contenitore #copertina {
-        width: calc(100% / 5);
+    #contenitore {
+        width: calc(100% / 5 - 10px);
+}
+
+    #copertina {
+        width: 200px;
+        text-align: center;
+        background-color:  #2e3a46;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
     }
+
+    #copertina img {
+        width: 100%;
+}
+
+   
 
 </style>
 
@@ -86,7 +105,14 @@ $dischi = [
     "author" => "Michael Jacjson",      
     "genre" => "Pop",      
     "year" => "1987"   
-    ]
+],
+[
+    "poster" => "https://cdn2.jazztimes.com/2018/05/SteveGadd-800x723.jpg",      
+    "title" => "Steve Gadd Band",      
+    "author" => "Steve Gadd Band",      
+    "genre" => "Jazz",      
+    "year" => "2018" 
+],
 ];
   
 
