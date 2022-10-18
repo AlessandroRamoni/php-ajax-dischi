@@ -16,7 +16,7 @@
         gap: 10px;
         margin: 0 auto;
         max-width: 1000px;
-        background-color:  rgba(0, 92, 125, 0.5);
+        background-color:  #1e2d3b;
     }
 
     #contenitore {
@@ -30,11 +30,12 @@
         color: #ffffff;
         display: flex;
         flex-direction: column;
+        height: 500px;
     }
 
     #copertina img {
         width: 100%;
-}
+    }
 
    
 
