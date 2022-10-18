@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #1e2d3b;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+#contenitore {
+    width: calc(100% / 5 - 10px);
+    padding-top: 50px;
+}
+
+#copertina {
+    text-align: center;
+    background-color: #2e3a46;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    line-height: 0.8;
+}
+
+#copertina div {
+    max-width: 100%;
+}
+
+#copertina div img {
+    width: 100%;
+}

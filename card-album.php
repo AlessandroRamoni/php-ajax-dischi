@@ -1,8 +1,11 @@
 <div id="contenitore">
         <div id="copertina">
-            <?= '<img src="' . $copertina["poster"] . '">'?>
-            <?= "<h1>" . $copertina["title"] . "</h1>"?>
-            <?= "<h3>" . $copertina["author"] . "</h3>"?>
+            <div>
+                <?= '<img src="' . $copertina["poster"] . '">'?>
+            </div>
+            
+            <?= "<h2>" . $copertina["title"] . "</h2>"?>
+            <?= "<h4>" . $copertina["author"] . "</h4>"?>
             <?= "<p>" . $copertina["genre"] . "</p>"?>
             <?= "<p>" . $copertina["year"] . "</p>"?>
         </div>
